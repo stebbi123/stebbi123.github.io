@@ -189,7 +189,27 @@ $(document).ready(function(){
 	"Putrefy! Deal twice the maximum result of your damage dice, the creature’s maximum hitpoints are reduced by the same amount, and the creature cannot regain hit points until the end of its next turn. Then roll on the major injury chart."];
 	
 	var poison = [];
-	var psychic = [];
+	var psychic = ["", "You call that a crit? Roll damage as normal.",
+	"Roll your damage dice as normal and you control the creature’s movement on its next turn",
+	"Roll your damage dice as normal and you control the creature’s movement on its next turn",
+	"Confused! Roll your damage dice as normal and the creature cannot differentiate friend from foe until the end of its next turn.",
+	"Confused! Roll your damage dice as normal and the creature cannot differentiate friend from foe until the end of its next turn.",
+	"Confused! Roll your damage dice as normal and the creature cannot differentiate friend from foe until the end of its next turn.",
+	"Good hit! Do not roll your damage dice, instead deal the maximum result possible with those dice",
+	"Good hit! Do not roll your damage dice, instead deal the maximum result possible with those dice",
+	"Great hit! Roll twice as many damage dice as normal.",
+	"Great hit! Roll twice as many damage dice as normal.",
+	"Great hit! Roll twice as many damage dice as normal.",
+	"Dominated! Roll twice as many damage dice as normal and you control the creature’s action on its next turn.",
+	"Dominated! Roll twice as many damage dice as normal and you control the creature’s action on its next turn.",
+	"Psychological fracture! Roll twice as many damage dice as normal and roll on the Insanity chart with disadvantage",
+	"Psychological fracture! Roll twice as many damage dice as normal and roll on the Insanity chart with disadvantage",
+	"Psychological fracture! Roll twice as many damage dice as normal and roll on the Insanity chart with disadvantage",
+	"Psychological break! Deal the maximum amount of damage from your normal damage dice then roll your damage dice and add that result. Then roll on the Insanity chart.",
+	"Psychological break! Deal the maximum amount of damage from your normal damage dice then roll your damage dice and add that result. Then roll on the Insanity chart.",
+	"Madness! Deal twice the maximum result of your damage dice and roll on the Insanity chart.",
+	"Mind melt! Deal twice the maximum result of your damage dice and roll on the Insanity chart with advantage."];
+	
 	var radiant = [];
 	var thunder = [];
 
