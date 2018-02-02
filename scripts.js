@@ -276,7 +276,7 @@ $(document).ready(function(){
 
 	var minInjury = ["", "Injured leg! The creature’s movement speed is reduced by 10 ft.",
 	"Injured leg! The creature’s movement speed is reduced by 10 ft.",
-	"Injured leg! The creature’s movement speed is reduced by 10 ft."
+	"Injured leg! The creature’s movement speed is reduced by 10 ft.",
 	"Injured arm! Randomly determine one of the creature’s arms. That arm cannot be used to hold a shield and the creature has disadvantage on any rolls involving the use of that arm",
 	"Injured arm! Randomly determine one of the creature’s arms. That arm cannot be used to hold a shield and the creature has disadvantage on any rolls involving the use of that arm",
 	"Injured arm! Randomly determine one of the creature’s arms. That arm cannot be used to hold a shield and the creature has disadvantage on any rolls involving the use of that arm",
