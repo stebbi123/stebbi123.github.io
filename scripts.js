@@ -145,7 +145,28 @@ $(document).ready(function(){
 	"Ensorcelled! Deal the maximum amount of damage from your normal damage dice then roll your damage dice and add that result then roll on the minor injury chart. Additionally, the creature is spellbound for the next minute. While spellbound it makes saving throws against spells with disadvantage and spell attack rolls against it have advantage. At the end of each of the creature’s turns it can make an Intelligence saving throw (DC 16) to end this effect.",
 	"Arcane injury! Deal twice the maximum result of your damage dice and roll on the major injury chart.",
 	"Magically mauled! Deal twice the maximum result of your damage dice and roll on the major injury chart. Additionally, the creature is spellbound for the next minute. While spellbound it makes saving throws against spells with disadvantage and spell attack rolls against it have advantage. At the end of each of the creature’s turns it can make an Intelligence saving throw (DC 18) to end this effect."];
-	var lightning = [];
+	
+	var lightning = [" ", "You call that a crit? Roll damage as normal",
+	"Shocking! Roll damage as normal and the creature cannot use reactions until the end of its next turn",
+	"Shocking! Roll damage as normal and the creature cannot use reactions until the end of its next turn",
+	"Good hit! Do not roll your damage dice, instead deal the maximum result possible with those dice.",
+	"Good hit! Do not roll your damage dice, instead deal the maximum result possible with those dice.",
+	"Good hit! Do not roll your damage dice, instead deal the maximum result possible with those dice.",
+	"Sparks fly! Roll your damage as normal and you may choose one other creature within 15 ft. of the victim. That creature must succeed on a Dexterity saving throw (DC 14) or take half as much damage",
+	"Sparks fly! Roll your damage as normal and you may choose one other creature within 15 ft. of the victim. That creature must succeed on a Dexterity saving throw (DC 14) or take half as much damage",
+	"Great hit! Roll twice as many damage dice as normal.",
+	"Great hit! Roll twice as many damage dice as normal.",
+	"Great hit! Roll twice as many damage dice as normal.",
+	"Electric arc! Roll twice as many damage dice as normal and you may choose one other creature within 15 ft. of the victim. That creature must succeed on a Dexterity saving throw (DC 18) or take half as much damage. ",
+	"Electric arc! Roll twice as many damage dice as normal and you may choose one other creature within 15 ft. of the victim. That creature must succeed on a Dexterity saving throw (DC 18) or take half as much damage. ",
+	"Fulminate! Roll twice as many damage dice as normal and roll on the minor injury chart. If the creature is wearing metal armor roll on the major injury chart instead.",
+	"Fulminate! Roll twice as many damage dice as normal and roll on the minor injury chart. If the creature is wearing metal armor roll on the major injury chart instead.",
+	"Fulminate! Roll twice as many damage dice as normal and roll on the minor injury chart. If the creature is wearing metal armor roll on the major injury chart instead.",
+	"Lit up! Deal the maximum amount of damage from your normal damage dice then roll your damage dice and add that result. The creature and each creature you choose within 15 ft. of it cannot take reactions until the end of their next turn. Then roll on the minor injury chart.",
+	"Lit up! Deal the maximum amount of damage from your normal damage dice then roll your damage dice and add that result. The creature and each creature you choose within 15 ft. of it cannot take reactions until the end of their next turn. Then roll on the minor injury chart.",
+	"Electrocuted! Deal twice the maximum result of your damage dice and roll on the major injury chart.",
+	"Lightning rod! Deal twice the maximum result of your damage dice and you may choose one other creature within 15 ft. of the victim. That creature must succeed on a Dexterity saving throw (DC 20) or take half as much damage. Then roll on the major injury chart."];
+	
 	var necrotic = [];
 	var poison = [];
 	var psychic = [];
