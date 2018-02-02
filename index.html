@@ -1,24 +1,96 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-	<title>Verkefni 9</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-<div class="center">
-<h1 class="message"></h1>
-<div class="question">
+<html lang="en">
 
-</div>
+  <head>
 
-<div class="choices">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-</div>
-<button class="btn-answer1">True</button>
-<button class="btn-answer2">False</button>
-</div>
-<script src="jquery-3.2.1.min.js"></script>
-<script src="app.js"></script>
-</body>
+    <title>Bare - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        padding-top: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">DnD Crits</h1>
+          <input type="text" name="inputSubmit" id="inputSubmit">
+          <button id="btnSubmit">submit</button>
+        </div>
+        <div class="col-lg-12 text-center">
+        	<input type="radio" id="bludgeonRad" name="attackType" value="bludgeon">
+        	<label for="bludgeon">bludgeon|</label>
+
+        	<input type="radio" id="piercingRad" name="attackType" value="piercing">
+        	<label for="piercing">piercing|</label>
+
+        	<input type="radio" id="slashingRad" name="attackType" value="slashing">
+        	<label for="slashing">slashing|</label>
+
+        	<input type="radio" id="acidRad" name="attackType" value="acid">
+        	<label for="acid">acid|</label>
+
+        	<input type="radio" id="coldRad" name="attackType" value="cold">
+        	<label for="cold">cold|</label>
+
+        	<input type="radio" id="fireRad" name="attackType" value="fire">
+        	<label for="fire">fire|</label>
+
+
+        </div>
+        <div class="col-lg-12 text-center">
+        <input type="radio"  id="forceRad" name="attackType" value="force">
+        	<label for="force">force|</label>
+
+        	<input type="radio" id="lightningRad" name="attackType" value="lightning">
+        	<label for="lightning">lightning|</label>
+
+        	<input type="radio" id="necroticRad" name="attackType" value="necrotic">
+        	<label for="necrotic">necrotic|</label>
+
+        	<input type="radio" id="poisonRad" name="attackType" value="poison">
+        	<label for="poison">poison|</label>
+
+        	<input type="radio" id="psychicRad" name="attackType" value="psychic">
+        	<label for="psychic">psychic|</label>
+
+        	<input type="radio" id="radiantRad" name="attackType" value="radiant">
+        	<label for="radiant">radiant|</label>
+
+        	<input type="radio" id="thunderRad"name="attackType" value="thunder">
+        	<label for="thunder">thunder|</label>
+        	<p id="inputResult">
+        	</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"type="text/javascript"></script>
+  </body>
+
 </html>
