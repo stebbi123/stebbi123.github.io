@@ -167,7 +167,27 @@ $(document).ready(function(){
 	"Electrocuted! Deal twice the maximum result of your damage dice and roll on the major injury chart.",
 	"Lightning rod! Deal twice the maximum result of your damage dice and you may choose one other creature within 15 ft. of the victim. That creature must succeed on a Dexterity saving throw (DC 20) or take half as much damage. Then roll on the major injury chart."];
 	
-	var necrotic = [];
+	var necrotic = ["", "You call that a crit? Roll damage as normal",
+	"Spoil! Roll damage as normal and the creature cannot regain hit points until the end of its next turn",
+	"Spoil! Roll damage as normal and the creature cannot regain hit points until the end of its next turn",
+	"Good hit! Do not roll your damage dice, instead deal the maximum result possible with those dice",
+	"Good hit! Do not roll your damage dice, instead deal the maximum result possible with those dice",
+	"Good hit! Do not roll your damage dice, instead deal the maximum result possible with those dice",
+	"Fester! Roll your damage as normal and the creature’s maximum hit points are reduced by the same amount.",
+	"Fester! Roll your damage as normal and the creature’s maximum hit points are reduced by the same amount.",
+	"Great hit! Roll twice as many damage dice as normal.",
+	"Great hit! Roll twice as many damage dice as normal.",
+	"Great hit! Roll twice as many damage dice as normal.",
+	"Decay! Roll twice as many damage dice as normal and the creature’s maximum hit points are reduced by the same amount.",
+	"Decay! Roll twice as many damage dice as normal and the creature’s maximum hit points are reduced by the same amount.",
+	"Rot! Roll twice as many damage dice as normal and the creature cannot regain hit points for the next minute. It may make a saving throw (DC 16) at the end of each of its turns to end this effect.",
+	"Rot! Roll twice as many damage dice as normal and the creature cannot regain hit points for the next minute. It may make a saving throw (DC 16) at the end of each of its turns to end this effect.",
+	"Rot! Roll twice as many damage dice as normal and the creature cannot regain hit points for the next minute. It may make a saving throw (DC 16) at the end of each of its turns to end this effect.",
+	"Blight! Deal the maximum amount of damage from your normal damage dice then roll your damage dice and add that result. The creature’s maximum hit points are reduced by the same amount. Then roll on the minor injury chart.",
+	"Blight! Deal the maximum amount of damage from your normal damage dice then roll your damage dice and add that result. The creature’s maximum hit points are reduced by the same amount. Then roll on the minor injury chart.",
+	"Atrophy! Deal twice the maximum result of your damage dice and roll on the major injury chart",
+	"Putrefy! Deal twice the maximum result of your damage dice, the creature’s maximum hitpoints are reduced by the same amount, and the creature cannot regain hit points until the end of its next turn. Then roll on the major injury chart."];
+	
 	var poison = [];
 	var psychic = [];
 	var radiant = [];
