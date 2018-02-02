@@ -124,7 +124,26 @@ $(document).ready(function(){
 	"Combustion! Deal twice the maximum result of your damage dice and roll on the major injury chart.",
 	"Inferno! Deal twice the maximum result of your damage dice and roll on the major injury chart. Additionally, the creature is on fire. While the creature is on fire it takes 2d8 fire damage at the start of each of its turns. The creature can end this condition by dropping prone and using 5 feet of movement to roll on the ground."];
 	
-	var force = [];
+	var force = ["", "You call that a crit? Roll damage as normal.",
+	"Spellstruck! Roll damage as normal and the creature has disadvantage on saving throws against spells until the end of its next turn.",
+	"Spellstruck! Roll damage as normal and the creature has disadvantage on saving throws against spells until the end of its next turn.",
+	"Good hit! Do not roll your damage dice, instead deal the maximum result possible with those dice",
+	"Good hit! Do not roll your damage dice, instead deal the maximum result possible with those dice",
+	"Good hit! Do not roll your damage dice, instead deal the maximum result possible with those dice",
+	"Eldritch incandescence! Roll your damage as normal and spell attack rolls against the creature have advantage until the end of its next turn",
+	"Eldritch incandescence! Roll your damage as normal and spell attack rolls against the creature have advantage until the end of its next turn",
+	"Great hit! Roll twice as many damage dice as normal",
+	"Great hit! Roll twice as many damage dice as normal",
+	"Great hit! Roll twice as many damage dice as normal",
+	"Bewitching blow! Roll twice as many damage dice as normal and the creature is spellbound until the end of its next turn. While spellbound it makes saving throws against spells with disadvantage and spell attack rolls against it have advantage.",
+	"Bewitching blow! Roll twice as many damage dice as normal and the creature is spellbound until the end of its next turn. While spellbound it makes saving throws against spells with disadvantage and spell attack rolls against it have advantage.",
+	"Mystic magnet! Roll twice as many damage dice as normal and the creature is spellbound for the next minute. While spellbound it makes saving throws against spells with disadvantage and spell attack rolls against it have advantage. At the end of each of the creature’s turns it can make an Intelligence saving throw (DC 14) to end this effect.",
+	"Mystic magnet! Roll twice as many damage dice as normal and the creature is spellbound for the next minute. While spellbound it makes saving throws against spells with disadvantage and spell attack rolls against it have advantage. At the end of each of the creature’s turns it can make an Intelligence saving throw (DC 14) to end this effect.",
+	"Mystic magnet! Roll twice as many damage dice as normal and the creature is spellbound for the next minute. While spellbound it makes saving throws against spells with disadvantage and spell attack rolls against it have advantage. At the end of each of the creature’s turns it can make an Intelligence saving throw (DC 14) to end this effect.",
+	"Ensorcelled! Deal the maximum amount of damage from your normal damage dice then roll your damage dice and add that result then roll on the minor injury chart. Additionally, the creature is spellbound for the next minute. While spellbound it makes saving throws against spells with disadvantage and spell attack rolls against it have advantage. At the end of each of the creature’s turns it can make an Intelligence saving throw (DC 16) to end this effect.",
+	"Ensorcelled! Deal the maximum amount of damage from your normal damage dice then roll your damage dice and add that result then roll on the minor injury chart. Additionally, the creature is spellbound for the next minute. While spellbound it makes saving throws against spells with disadvantage and spell attack rolls against it have advantage. At the end of each of the creature’s turns it can make an Intelligence saving throw (DC 16) to end this effect.",
+	"Arcane injury! Deal twice the maximum result of your damage dice and roll on the major injury chart.",
+	"Magically mauled! Deal twice the maximum result of your damage dice and roll on the major injury chart. Additionally, the creature is spellbound for the next minute. While spellbound it makes saving throws against spells with disadvantage and spell attack rolls against it have advantage. At the end of each of the creature’s turns it can make an Intelligence saving throw (DC 18) to end this effect."];
 	var lightning = [];
 	var necrotic = [];
 	var poison = [];
