@@ -83,6 +83,7 @@ $(document).ready(function(){
 	"Caustic trauma! Deal the maximum amount of damage from your normal damage dice then roll your damage dice and add that result. If the creature is wearing armor, roll on the minor injury chart and its AC modifier is reduced by 2 until it can be repaired (for half the price of new armor of the same type) or cleaned (if the armor is magical). If the creature is not wearing armor, roll on the major injury chart.",
 	"Vitriolic! Deal twice the maximum result of your damage dice and roll on the major injury chart.",
 	"Acid bath! Deal twice the maximum result of your damage dice. If the creature is wearing armor, the armor is destroyed (if non-magical) or rendered useless until cleaned during a long rest (if magical) and roll on the major injury chart. If the creature is not wearing armor, roll on the major injury chart and the creature is disfigured. While disfigured the creature has disadvantage on all Charisma ability checks except Charisma (Intimidation). Being disfigured can be removed with the spell greater restoration"];
+	
 	var cold = [" ", "You call that a crit? Roll damage as normal",
 	"Chills! Roll damage as normal and the creature may only move half its movement speed on its next turn",
 	"Chills! Roll damage as normal and the creature may only move half its movement speed on its next turn",
@@ -273,11 +274,77 @@ $(document).ready(function(){
 	"Wall of sound! Deal twice the maximum result of your damage dice and roll on the major injury chart",
 	"Sonic salvo! Deal twice the maximum result of your damage dice, the creature is deafened permanently, and stunned until the end of its next round. Then roll on the major injury chart"];
 
+	var minInjury = ["", "Injured leg! The creature’s movement speed is reduced by 10 ft.",
+	"Injured leg! The creature’s movement speed is reduced by 10 ft.",
+	"Injured leg! The creature’s movement speed is reduced by 10 ft."
+	"Injured arm! Randomly determine one of the creature’s arms. That arm cannot be used to hold a shield and the creature has disadvantage on any rolls involving the use of that arm",
+	"Injured arm! Randomly determine one of the creature’s arms. That arm cannot be used to hold a shield and the creature has disadvantage on any rolls involving the use of that arm",
+	"Injured arm! Randomly determine one of the creature’s arms. That arm cannot be used to hold a shield and the creature has disadvantage on any rolls involving the use of that arm",
+	"Injured arm! Randomly determine one of the creature’s arms. That arm cannot be used to hold a shield and the creature has disadvantage on any rolls involving the use of that arm",
+	"Multiple injuries! The creature’s maximum hit points are reduced by an amount equivalent to half of the damage dealt by the attack.",
+	"Multiple injuries! The creature’s maximum hit points are reduced by an amount equivalent to half of the damage dealt by the attack.",
+	"Multiple injuries! The creature’s maximum hit points are reduced by an amount equivalent to half of the damage dealt by the attack.",
+	"Badly beaten! The creature has disadvantage on Constitution saving throws",
+	"Badly beaten! The creature has disadvantage on Constitution saving throws",
+	"Badly beaten! The creature has disadvantage on Constitution saving throws",
+	"Badly beaten! The creature has disadvantage on Constitution saving throws",
+	"Ringing blow! The creature is stunned until the end of its next turn and deafened until it completes a the recuperate downtime activity",
+	"Ringing blow! The creature is stunned until the end of its next turn and deafened until it completes a the recuperate downtime activity",
+	"Ringing blow! The creature is stunned until the end of its next turn and deafened until it completes a the recuperate downtime activity",
+	"Blow to the head! The creature is unconscious for 2d12 hours."];
+
+	var majorInjury = ["", "Crippled leg! The creature’s movement speed is reduced by 10 feet and it has disadvantage on Dexterity saving throws",
+	"Crippled leg! The creature’s movement speed is reduced by 10 feet and it has disadvantage on Dexterity saving throws",
+	"Crippled leg! The creature’s movement speed is reduced by 10 feet and it has disadvantage on Dexterity saving throws",
+	"Crippled arm! Randomly determine one of the creature’s arms. That arm cannot be used to hold an item and any ability check requiring that arm automatically fails or has disadvantage (DM’s choice)",
+	"Crippled arm! Randomly determine one of the creature’s arms. That arm cannot be used to hold an item and any ability check requiring that arm automatically fails or has disadvantage (DM’s choice)",
+	"Crippled arm! Randomly determine one of the creature’s arms. That arm cannot be used to hold an item and any ability check requiring that arm automatically fails or has disadvantage (DM’s choice)",
+	"Crippled arm! Randomly determine one of the creature’s arms. That arm cannot be used to hold an item and any ability check requiring that arm automatically fails or has disadvantage (DM’s choice)",
+	"Severely wounded! The creature’s maximum hit points are reduced by an amount equivalent to the damage dealt by the attack.",
+	"Severely wounded! The creature’s maximum hit points are reduced by an amount equivalent to the damage dealt by the attack.",
+	"Severely wounded! The creature’s maximum hit points are reduced by an amount equivalent to the damage dealt by the attack.",
+	"Edge of death! The creature has disadvantage on Constitution and death saving throws",
+	"Edge of death! The creature has disadvantage on Constitution and death saving throws",
+	"Edge of death! The creature has disadvantage on Constitution and death saving throws",
+	"Edge of death! The creature has disadvantage on Constitution and death saving throws",
+	"My eyes! The creature is blinded.",
+	"My eyes! The creature is blinded.",
+	"My eyes! The creature is blinded.",
+	"Decapitated! The creature is dead."];
+
+	var insanity = ["","Synesthesia. You can hear colors, smell sounds, or taste textures. Regardless of the specific manifestation, you have disadvantage on all Perception and Investigation skill checks.",
+	"Kleptomania. Once per day when you are in a personal residence or marketplace, the DM can call on you to succeed on a Wisdom saving throw (DC 12) or attempt to steal an item of insignificant practical and monetary value. ",
+	"Paranoia. Once per day following an interaction with another creature (including other PCs) the DM can call on you to succeed on a Wisdom saving throw (DC 12) or you suspect that creature is secretly plotting against you.",
+	"Obsession. Choose a person or personal interest you are obsessed with. Once per day, when you are presented with an opportunity to interact with or learn more about the subject of your obsession the DM can call on you to succeed on a Wisdom saving throw (DC 14) or ignore everything else to obsess over the object of your fascination.",
+	"Addiction. Choose a behavior or substance you have used. Once per day, when you are presented with an opportunity to do the behavior or use the substance the DM can call on you to succeed on a Wisdom saving throw (DC 14) or ignore everything else to indulge in your vice",
+	"Odd Thinking. Once per day when you hear a rational explanation for an event or occurrence, your DM may call on you to succeed on a Wisdom saving throw (DC 12) or you reject the rational explanation for a conspiratorial or fantastical explanation.",
+	"Narcissism. When you take an action or series of action that doesn’t directly benefit you, you must pass a Wisdom saving throw (DC 11) or you can’t take that action / series of actions. If any self-sacrifice on your part would be required the DC of the saving throw is increased to 16.",
+	"Delusional. When you gain this insanity the DM will tell you a belief that you have. No matter what evidence is presented to the contrary so long as you have this insanity you cannot be persuaded that this belief is not true.",
+	"Pica. Once per day the DM can call on you to pass a Wisdom saving throw (DC 14) or immediately eat one non-food object (such as dirt, napkins, or a small piece of jewelry) of the DM’s choice.",
+	"Retrograde amnesia. You forget everything about your personal life prior to the moment you received this insanity.",
+	"Overwhelmed. If you do not have immunity or resistance to psychic damage, you gain vulnerability to psychic damage. If you have resistance to psychic damage, you lose it. If you have immunity to psychic damage, you lose it but gain resistance to psychic damage",
+	"Anterograde amnesia. Whenever you try to recall a fact you learned since you received this insanity, make a Wisdom saving throw (DC 12). If you fail you cannot recall the fact",
+	"Dependence. You must pass a Wisdom saving throw (DC 14) to take an action that one or more of your allies disapprove of.",
+	"Anxious. You have disadvantage on saving throws against being frightened. Additionally, once per day the DM can call on you to succeed a Wisdom saving throw (DC 14) or be frightened by a creature of the DM’s choosing for the next minute.",
+	"Mute. Whenever you wish to speak allowed (including casting a spell that has verbal components) you must succeed on a Wisdom saving throw (DC 13) to do so",
+	"Narcolepsy. You have disadvantage on saving throws against sleeping or unconsciousness. Once per day the DM may call on you to succeed on a Constitution saving throw (DC 12) or fall unconscious for one minute or until you take damage or another creature spends their action trying to rouse you",
+	"Insomnia. You cannot take long rests and your short rests take 8 hours to complete",
+	"Homicidal. After each long rest you must pass a Wisdom saving throw (DC 14) or be overcome with the urge to end the life of a humanoid creature and you cannot benefit from another long rest until you do so.",
+	"Suicidal. After each long rest you must pass a Wisdom saving throw (DC 12) or make an attempt to end your own life.",
+	"Catatonia. You are unconscious for 10d10 years."];
+
+
 	function checkValue(damageType){
 		var values = document.getElementById('inputSubmit').value;
 		console.log(values);
 		console.log(damageType);
 		document.getElementById('inputResult').innerHTML = damageType[values];		
+	}
+	function insValue(damageType){
+		var values = document.getElementById('inputSubmit').value;
+		console.log(values);
+		console.log(damageType);
+		document.getElementById('insanityResult').innerHTML = damageType[values];		
 	}
 
 
@@ -337,6 +404,15 @@ $(document).ready(function(){
 		else if ($('#thunderRad').prop('checked')) {
 			console.log($('#thunderRad').prop('checked'));
 			checkValue(thunder);
+		}
+		else if ($('#minInjRad').prop('checked')) {
+			insValue(minInjury);
+		}
+		else if ($('#majInjRad').prop('checked')) {
+			insValue(majorInjury);
+		}
+		else if ($('#insanityjRad').prop('checked')) {
+			insValue(insanity);
 		}
 		
 	});
