@@ -231,8 +231,47 @@ $(document).ready(function(){
 	"Madness! Deal twice the maximum result of your damage dice and roll on the Insanity chart.",
 	"Mind melt! Deal twice the maximum result of your damage dice and roll on the Insanity chart with advantage."];
 	
-	var radiant = [];
-	var thunder = [];
+	var radiant = ["", "You call that a crit? Roll damage as normal.",
+	"Dazzled! Roll damage as normal and the creature cannot willingly move closer to you until the end of its next turn.",
+	"Dazzled! Roll damage as normal and the creature cannot willingly move closer to you until the end of its next turn.",
+	"Good hit! Do not roll your damage dice, instead deal the maximum result possible with those dice.",
+	"Good hit! Do not roll your damage dice, instead deal the maximum result possible with those dice.",
+	"Good hit! Do not roll your damage dice, instead deal the maximum result possible with those dice.",
+	"Disheartening blast! Roll your damage as normal and the creature is frightened until the end of its next turn",
+	"Disheartening blast! Roll your damage as normal and the creature is frightened until the end of its next turn",
+	"Great hit! Roll twice as many damage dice as normal.",
+	"Great hit! Roll twice as many damage dice as normal.",
+	"Great hit! Roll twice as many damage dice as normal.",
+	"Awed! Roll twice as many damage dice as normal and the creature is frightened until the end of its next turn.",
+	"Awed! Roll twice as many damage dice as normal and the creature is frightened until the end of its next turn.",
+	"Holy terror! Roll twice as many damage dice as normal and roll on the minor injury chart. Additionally, the creature is frightened for the next minute. It can make a Wisdom saving throw (DC 16) at the end of each of its turns to end this effect.",
+	"Holy terror! Roll twice as many damage dice as normal and roll on the minor injury chart. Additionally, the creature is frightened for the next minute. It can make a Wisdom saving throw (DC 16) at the end of each of its turns to end this effect.",
+	"Holy terror! Roll twice as many damage dice as normal and roll on the minor injury chart. Additionally, the creature is frightened for the next minute. It can make a Wisdom saving throw (DC 16) at the end of each of its turns to end this effect.",
+	"Righteous mark! Deal the maximum amount of damage for your normal damage dice then roll your damage dice and add that result, then roll on the minor injury chart. Additionally, the creature glows for the next minute. While glowing it produces bright light up 10 feet and dim light up to 30 feet and all successful attacks against the creature deal an additional 1d4 radiant damage",
+	"Righteous mark! Deal the maximum amount of damage for your normal damage dice then roll your damage dice and add that result, then roll on the minor injury chart. Additionally, the creature glows for the next minute. While glowing it produces bright light up 10 feet and dim light up to 30 feet and all successful attacks against the creature deal an additional 1d4 radiant damage",
+	"Wrath of the gods! Deal twice the maximum result of your damage dice and roll on the major injury chart.",
+	"Smote! Deal twice the maximum result of your damage dice and roll on the major injury chart. Additionally, the creature glows for the next minute. While glowing it produces bright light up 10 feet and dim light up to 30 feet and all successful attacks against the creature deal an additional 1d6 radiant damage."];
+	
+	var thunder = ["", "You call that a crit? Roll damage as normal",
+	"Boom! Roll damage as normal and the creature is deafened until the end of its next turn.",
+	"Boom! Roll damage as normal and the creature is deafened until the end of its next turn.",
+	"Good hit! Do not roll your damage dice, instead deal the maximum result possible with those dice",
+	"Good hit! Do not roll your damage dice, instead deal the maximum result possible with those dice",
+	"Good hit! Do not roll your damage dice, instead deal the maximum result possible with those dice",
+	"Ka-boom! Roll your damage as normal and the creature is deafened for one minute",
+	"Ka-boom! Roll your damage as normal and the creature is deafened for one minute",
+	"Great hit! Roll twice as many damage dice as normal",
+	"Great hit! Roll twice as many damage dice as normal",
+	"Great hit! Roll twice as many damage dice as normal",
+	"Thunder clap! Roll twice as many damage dice as normal and the creature is stunned until the start of its next turn and deafened for one minute",
+	"Thunder clap! Roll twice as many damage dice as normal and the creature is stunned until the start of its next turn and deafened for one minute",
+	"Burst ear drums! Roll twice as many damage dice as normal and the creature is deafened permanently. Then roll on the minor injury chart",
+	"Burst ear drums! Roll twice as many damage dice as normal and the creature is deafened permanently. Then roll on the minor injury chart",
+	"Burst ear drums! Roll twice as many damage dice as normal and the creature is deafened permanently. Then roll on the minor injury chart",
+	"Concussive blast! Deal the maximum amount of damage from your normal damage dice then roll your damage dice and add that result. The creature stunned until the end of its next turn and deafened permanently. Then roll on the minor injury chart",
+	"Concussive blast! Deal the maximum amount of damage from your normal damage dice then roll your damage dice and add that result. The creature stunned until the end of its next turn and deafened permanently. Then roll on the minor injury chart",
+	"Wall of sound! Deal twice the maximum result of your damage dice and roll on the major injury chart",
+	"Sonic salvo! Deal twice the maximum result of your damage dice, the creature is deafened permanently, and stunned until the end of its next round. Then roll on the major injury chart"];
 
 	function checkValue(damageType){
 		var values = document.getElementById('inputSubmit').value;
