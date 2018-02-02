@@ -26,6 +26,7 @@ $(document).ready(function(){
 	"Lunge and thrust! Roll damage dice twice and use the higher result.",
 	"Good hit! Do not roll your damage dice, instead deal the maximum result possible with those dice",
 	"Good hit! Do not roll your damage dice, instead deal the maximum result possible with those dice",
+	"Good hit! Do not roll your damage dice, instead deal the maximum result possible with those dice",
 	"Stabbed! Roll your damage dice twice and add them together.",
 	"Stabbed! Roll your damage dice twice and add them together.",
 	"Great hit! Roll your damage dice twice and add them together.",
